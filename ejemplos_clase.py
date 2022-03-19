@@ -29,6 +29,8 @@ def practica_listas():
     lista1 = []  # Lista vacia
 
     # Crear una lista de rango -10 a 10 inclusive
+    for n in range(-10, 11):
+        lista1.append(n)
 
     print('1:', lista1)
 
@@ -38,6 +40,9 @@ def practica_listas():
     lista2 = []  # Lista vacia
     # Crear una lista de rango -10 a 10 inclusive de 
     # solo nùmeros pares
+    for n in range(-10, 11):
+        if (n % 2)== 0:
+            lista2.append(n)
 
     print('2:', lista2)
 
@@ -46,6 +51,9 @@ def practica_listas():
 
     lista3 = []  # Lista vacia
     # Filtrar numeros positivos
+    for n in lista1:
+        if n >= 0:
+            lista3.append(n)
 
     print('3:', lista3)
 
@@ -54,6 +62,9 @@ def practica_listas():
 
     lista4 = []  # Lista vacia
     # Filtrar numeros mayores a 3
+    for n in lista1:
+        if n > 3:
+            lista4.append(n)
 
     print('4:', lista4)
 
@@ -61,6 +72,7 @@ def practica_listas():
 
     suma_total = 0
     # Sumar numeros
+    suma_total = sum(lista1)
 
     print('5:', suma_total)
 
@@ -69,6 +81,8 @@ def practica_listas():
 
     lista6 = []  # Lista vacia
     # Aplicar mdulo
+    for n in lista1:
+        lista6.append(abs(n))
 
     print('6:', lista6)
 
@@ -78,6 +92,9 @@ def practica_listas():
 
     lista7 = []  # Lista vacia
     # Sumar listas
+    for i in range(len(lista1)):
+        suma = lista1[i] + lista6[i]
+        lista7.append(suma)
 
     print('7:', lista1)
     print('7:', lista6)
@@ -87,6 +104,8 @@ def practica_listas():
 
     lista8 = []  # Lista vacia
     # Elevar al cuadrado
+    for n in lista1:
+        lista8.append(n**2)
 
     print('8:', lista8)
 
